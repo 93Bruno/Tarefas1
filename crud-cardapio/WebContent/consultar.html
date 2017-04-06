@@ -1,0 +1,48 @@
+<! DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consultar</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+  </head>
+<body>
+
+<div id="main" class="container">
+  <h3 class="page-header">Consultar Cardápio</h3>
+
+  <nav class="navbar navbar-fixed-top topo">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h5 class="navbar-brand" href="">Consultar</h5>
+      </div>
+    </div>
+  </nav>
+
+  <table class="table table-hover">
+       <thead>
+         <tr>
+           <th>ID</th>
+           <th>Prato</th>
+           <th>Descrição</th>
+           <th>Valor</th>
+           <th>Disponibilidade</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+        
+           <th><%=    cardapio.getIdProduto()   =></th>
+           <th><%=    cardapio.getNomeProduto()   =></th>
+           <th><%=    cardapio.getDescProduto()   =></th>
+           <th><%=    cardapio.getValorProduto()   =></th>
+           <th><%=    cardapio.getDispProduto()   =></th>
+         </tr>
+		</tbody>
+     </table>
+  </div>
+</body>
+</html>
