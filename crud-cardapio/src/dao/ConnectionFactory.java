@@ -16,7 +16,7 @@ public class ConnectionFactory {
 	// Obtém conexão com o banco de dados
 	public static Connection obtemConexao() throws SQLException {
 		return DriverManager
-				.getConnection("jdbc:mysql://localhost:3306/crud_cardapio?user=root");
+				.getConnection("jdbc:mysql://localhost:3306/crud_cardapio?user=root&password=1234");
 	}
 
 }

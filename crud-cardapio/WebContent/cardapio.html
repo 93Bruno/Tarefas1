@@ -1,31 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>CRUD de Clientes básico</title>
-	</head>
-	<body>
-		<form method="post" action="crudCardapio">
-			<label for="id_cliente">ID:</label> 
-			<input id="id_produto" name="idProduto" type="text" placeholder="id do prato"/><br/>
-			
-			<label for="nome_cliente">Nome do Prato:</label> 
-			<input id="nome" name="nomeProduto" type="text" placeholder="nome do prato"/><br/> 
-			
-			<label for="nome_cliente">Descrição:</label> 
-			<input id="descricao" name="descProduto" type="text" placeholder="breve descricao"/><br/> 
-			
-			<label for="nome_cliente">Valor:</label> 
-			<input id="valor" name="valorProduto" type="text" placeholder="valor produto"/><br/> 
-			
-			
-			<label for="nome_cliente">Disponibilidade:</label> 
-			<input id="disponibilidade" name="dispProduto" type="text" placeholder="Disponibilidade"/><br/>
-			
-			<input type="submit" name="oQueFazer" value="Cadastrar" /><br/> 
-			<input type="submit" name="oQueFazer" value="Consultar" /><br/> 
-			<input type="submit" name="oQueFazer" value="Remover" /><br/> 
-			<input type="submit" name="oQueFazer" value="Atualizar"/>
-		</form>
-	</body>
+  <head>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+  </head>
+  </head>
+  <body>
+    <section>
+      <h2 id="h2">Cadastrar Novo Cardápio</h2>
+      <form method="post" action="crudCardapio">
+        <fieldset>
+          <label for="nome">ID:</label>
+          <input id="idProduto" name="idProduto" type="text" placeholder="digite a Categoria">
+        </fieldset>
+        <fieldset class="campo-medio">
+          <label for="desc">Prato:</label>
+          <input id="nomeProduto" name="nomeProduto" type="text" placeholder="Descrição do Produto">
+        </fieldset>
+        <fieldset class="campo-medio">
+          <label for="fone">Descrição:</label>
+          <input id="campo-valor" type="text" placeholder="digite o valor">
+        </fieldset>
+        <fieldset class="campo-medio">
+          <label for="fone">Valor:</label>
+          <input id="valorProduto" name="valorProduto" type="text" placeholder="digite a disponibilidade">
+        </fieldset>
+        <fieldset class="campo-medio">
+          <label for="fone">Disponibilidade:</label>
+          <input id="dispProduto" name="dispProduto" type="text" placeholder="digite a disponibilidade">
+        </fieldset>
+        <div id="center-botao">
+          <input type="submit" name="oQueFazer" value="Cadastrar"/><br/> 
+        </div>
+          
+        </form>
+      </section>
+    </body>
 </html>
